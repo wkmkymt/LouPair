@@ -2,12 +2,12 @@
 window.onload = function() {
 	$('.playmat')[0].style.top = 0;
 	$('.playmat')[0].style.left = 0;
-};
+}
 
 // 傾き
 function deviceorientationHandler(event) {
-	$('#test').innerHTML = (event.beta !== null) ?
-		'x: ' + (event.beta>>0) + ',<br>y: ' + (event.gamma>>0) + ',<br>z:' + (event.alpha>>0) + '<br>' :
+	$('#test').innerHTML = (event.beta !== null) ? 
+		'x: ' + (event.beta>>0) + ',<br>y: ' + (event.gamma>>0) + ',<br>z:' + (event.alpha>>0) + '<br>' : 
 		'地磁気センサーが利用できません。<br>';
 	var x = event.gamma;
 	var y = event.beta - 45;
@@ -31,10 +31,10 @@ function ScrollMat(x, y) {
 }
 
 // jQueryライクな要素取得
-// function $(string) {
-// 	if(string.indexOf('#', 0) === 0)
-// 		return document.getElementById(string.slice(1));
-// 	if(string.indexOf('.', 0) === 0)
-// 		return document.getElementsByClassName(string.slice(1));
-// 	return document.getElementsByTagName(string);
-// }
+function $(string) {
+	if(string.indexOf('#', 0) === 0)
+		return document.getElementById(string.slice(1));
+	if(string.indexOf('.', 0) === 0)
+		return document.getElementsByClassName(string.slice(1));
+	return document.getElementsByTagName(string);
+}
