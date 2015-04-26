@@ -1,0 +1,93 @@
+@charset 'UTF-8';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#siteheader {
+	background: #ff3333;
+}
+
+.playframe {
+	width: 100%;
+	padding-top: 100%;
+	border: solid 1px black;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+.playmat {
+	width: 200%;
+	padding: 15%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.playmenu {
+	width: 100%;
+	padding-top: 100%;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.lv {
+	padding: 15%;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.lv1 {
+	background: #99f;
+	top: 10%;
+	left: 35%;
+}
+
+.lv2 {
+	background: #f99;
+	top: 45%;
+	left: 10%;
+}
+
+.lv3 {
+	background: #9f9;
+	top: 45%;
+	left: 60%;
+}
+
+.cardrow {
+	width: 100%;
+}
+
+.cardrow:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.card {
+	margin: 1%;
+	width: 14%;
+	padding-top: 14%;
+	background: #000088;
+	float: left;
+	box-shadow: 6px 6px 4px 4px #ccc;
+}
+
+/* Clearfix */
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
