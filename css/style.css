@@ -104,7 +104,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .card span {
-        font-size: 300%;
+        font-size: 200%;
     }
 }
 
