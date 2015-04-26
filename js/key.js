@@ -30,7 +30,7 @@ function CheckKey() {
 		case KEY_INPUT_UP: y = -3; break;
 		case KEY_INPUT_RIGHT: x = 3; break;
 		case KEY_INPUT_LEFT: x = -3; break;
-	}	
+	}
 	ScrollMat(x, y);
 	setTimeout(CheckKey, 1000/60);
 }
